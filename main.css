@@ -1,0 +1,138 @@
+:root{
+    --cor0: #F2EA77;
+    --cor1: #F29F05;
+    --cor2: #D97904;
+    --cor3: #D95103;
+    --cor4: #8C3503;
+
+    --fonte-padrao: arial, verdana, sans-serif;
+    --fonte-titulo: "Edu VIC WA NT Beginner", cursive;
+    --fonte-sub: "Oswald", sans-serif;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor2)); 
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+    padding-top: 40px;
+    min-height: 150px;
+    text-align: center;
+    border-radius: 7px;
+}
+
+header > h1{
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 3px 3px 0 #0000007a;
+    font-family: var(--fonte-padrao);
+}
+
+header > p{
+    color: var(--cor0);
+    font-size: 1.50em;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.356);
+}
+
+.s1{
+    color: #eb1717;
+    font-family: var(--fonte-padrao);
+}
+
+.s2{
+    color: #3288f8;
+    font-family: var(--fonte-titulo);
+}
+
+nav{
+    background-color: var(--cor2);
+    padding: 8px;
+}
+
+nav li{
+    display: inline;
+}
+
+nav li a{
+    transition-duration: 0.3s;
+    text-decoration: none;
+    color: var(--cor0);
+    background-color: var(--cor2);
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.342);
+    font-size: 20px;
+    margin-left: 16px;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+nav li :hover{
+    background-color: var(--cor1);
+
+}
+
+main{
+    min-width: 320px;
+    max-width: 1080px;
+    margin: auto;
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.466);
+}
+
+section h2, section h3{
+    font-family: var(--fonte-sub);
+    font-weight: bold;
+    color: var(--cor4);
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.404);
+    font-size: 32px;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+article p{
+    font-size: 24px;
+    font-family: var(--fonte-padrao);
+    margin-bottom: 8px;
+    text-align: justify;
+    margin-right: 8px;
+    margin-left: 6px;
+}
+
+
+.container{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.anderson{
+    margin-right: 16px;
+}
+
+.social-links img{
+    height: 70px;
+
+}
+
+.social-links li{
+    display: inline;
+    text-decoration: none;
+    margin-right: 16px;
+}
+
+footer{
+    background-color: var(--cor2);
+    color: var(--cor0);
+    text-align: center;
+}
